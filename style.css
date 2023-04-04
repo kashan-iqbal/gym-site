@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+
+
+
+    display: grid;
+    grid-template-columns: 50px 70px 350px  80px 100px 1fr 70px 70px;
+    grid-template-rows: 500px min-content 350px 400px 500px 250px;
+    grid-template-areas:
+        "nav header header header header aside aside aside"
+        "nav service service service service service service service "
+        "nav  about about about our our our our "
+        "nav galler galler galler galler galler galler galler"
+        "nav footer footer footer footer footer footer footer "
+    ;
+
+
+}
+
+#nav {
+
+
+    grid-area: nav;
+    background-color: #FFFF00;
+
+
+}
+
+#nav i {
+    font-size: 2rem;
+    margin-top: 5px;
+    margin-left: 0.3rem;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bolder;
+    padding: 8px;
+    position: absolute;
+    border-radius: 5px;
+}
+
+
+
+#header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(211, 198, 17, 0.25), rgba(16, 29, 44, 0.83)), url("./images/istockphoto-1286351499-1024x1024.jpg");
+
+    grid-area: header;
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: 40px 1fr 1fr 1fr 40px;
+    grid-template-rows: 100px 150 20px px 160px;
+
+    grid-template-areas:
+        ". logo logo logo ."
+        " . . . . .  "
+        ".slogen slogen slogen."
+        ". join join join ."
+        "ft ft ft ft ft"
+    ;
+
+}
+
+#header img {
+    grid-area: logo;
+
+    justify-self: center;
+}
+
+#header p {
+    grid-area: slogen;
+    color: #FFFF00;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 3rem;
+
+}
+
+#header p span {
+    color: whitesmoke;
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+#join-us {
+    grid-area: join;
+    text-decoration: none;
+    height: 3rem;
+    width: 7rem;
+    border-radius: 8px;
+    font-size: large;
+    text-transform: uppercase;
+    background-color: #FFFF00;
+    border: none;
+    padding: 5px;
+    text-align: center;
+padding-top: 13px;
+    cursor: pointer;
+    /* box-shadow: #000000; */
+
+}
+
+#social {
+    grid-area: ft;
+    color: none;
+    font-size: 300%;
+    justify-self: center;
+    align-self: center;
+
+}
+
+#social h3 {
+    color: #FFFF00;
+    font-size: 25px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+#social a {
+    color: rgb(0, 0, 0);
+    
+}
+#fb{
+   
+}
+
+#fb:hover {
+    color: rgb(0, 45, 141);
+    
+}
+
+#wh:hover {
+    color: rgb(0, 255, 55);
+}
+
+#tw:hover {
+    color: rgb(0, 153, 255);
+}
+
+#yt:hover {
+    color: rgb(255, 0, 0);
+}
+
+
+
+
+
+
+
+/*  header css complete */
+
+
+/* aside css start */
+
+
+
+
+
+
+#aside {
+    background: linear-gradient(rgba(255, 238, 0, +55), rgba(0, 243, 255, 0.83));
+    grid-area: aside;
+    display: grid;
+    grid-template-columns: 2fr 80px 1fr;
+    grid-template-rows: 70px 1fr 1fr 1fr;
+    grid-template-areas: " hd hd hd"
+        "  img1 text1 info1"
+        " img2 text2 info2"
+        " img3 text3 info3";
+
+}
+
+#heading {
+    grid-area: hd;
+    font-size: 2rem;
+    justify-self: center;
+    align-self: center;
+    text-transform: uppercase;
+    font-family: 'Delicious Handrawn', cursive;
+    font-weight: bolder;
+    color: rgb(34, 0, 230);
+
+
+}
+
+#img1 {
+    grid-area: img1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+
+
+
+}
+
+#img1:hover {
+    transform: scale(1.2);
+}
+
+#img2 {
+    grid-area: img2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+#img2:hover {
+    transform: scale(1.2);
+}
+
+#img3 {
+    grid-area: img3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+#img3:hover {
+    transform: scale(1.2);
+}
+
+.image {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+
+
+#text1 {
+    grid-area: text1;
+    align-self: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#text2 {
+    grid-area: text2;
+    align-self: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+#text3 {
+    grid-area: text3;
+    align-self: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+#info1 {
+    grid-area: info1;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+
+}
+
+#info2 {
+    grid-area: info2;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+
+}
+
+#info3 {
+    grid-area: info3;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+
+}
+
+
+          /* aside finish  */
+          /* service css start */
+
+
+
+#service {
+    background-color: #FFC72C;
+    grid-area: service;
+    display: grid;
+    grid-template-columns: 1fr 2fr 30px 2fr 30px 2fr 1fr;
+grid-template-rows: 50px min-content 30px min-content  50px;
+grid-template-areas: ". . . . . . ."
+                    ". cardio . chest . weight . "
+                    ". . . . . . ."
+                    ". k . l .i."
+                    ". . . . . . .";
+
+
+    
+}
+.cardio{
+    grid-area: cardio;
+}
+.chest{
+    grid-area: chest;
+    color: rebeccapurple;
+    
+}
+#weight{
+    grid-area: weight;
+}
+
+
+
+
+
+
+#about {
+    background-color: brown;
+    grid-area: about;
+}
+
+#our {
+    grid-area: our;
+    background-color: chartreuse;
+
+}
+
+#gallery {
+    grid-area: galler;
+    background-color: lightcoral;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: seagreen;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*  chat gpt example */
+/* .container {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header header"
+      "sidebar content"
+      "footer footer";
+    height: 100vh;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: lightblue;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: lightgray;
+  }
+  
+  .content {
+    grid-area: content;
+    background-color: white;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: lightblue;
+  }
+   */
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+} */
+/* practice */
+
+/* .container {
+    background-color: gray;
+
+  overflow-y: auto;
+    display: grid;
+    grid-template-columns: 110px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 500px 500px 200px;
+    grid-template-areas: "navbar header header header header"
+                        "navbar story story section section"
+                        "navbar footer footer footer footer";
+
+    grid-gap: 10px;
+
+}
+
+#navbar {
+    grid-area: navbar;
+    background-color: yellow;
+}
+
+#header {
+    grid-area: header;
+    background-color: aqua;
+}
+
+#story {
+    grid-area: story;
+    background-color: rgb(0, 4, 253);
+}
+
+#section {
+    grid-area: section;
+    background-color: rgb(0, 236, 51);
+}
+
+#footer {
+    grid-area: footer;
+    background-color: rgb(238, 0, 79);
+} */
